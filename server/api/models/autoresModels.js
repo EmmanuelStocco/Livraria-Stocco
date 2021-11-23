@@ -17,7 +17,7 @@ function getByIdAutores (id, callback){
 function ativarInativar(id, ativo, callback){
     console.log('Autores Ativando/Inativando Registro' + id + " -  Status: " + ativo)
 
-    const m_sql = "update autores set aut_ativoinativo = '" + ativo + "' where aut_codigo'" + id + "'";
+    const m_sql = "update autores set aut_ativoinativo = '" + ativo + "' where aut_codigo = '" + id + "'";
 
     conexao.query( m_sql, callback)
 

@@ -18,7 +18,7 @@ function getByIdEditoras (id, callback){
 function ativarInativar(id, ativo, callback){
     console.log('Editoras Ativando/Inativando Registro' + id + " -  Status: " + ativo)
 
-    const m_sql = "update editoras set edt_ativoinativo = '" + ativo + "' where edt_codigo'" + id + "'";
+    const m_sql = "update editoras set edt_ativoinativo = '" + ativo + "' where edt_codigo ='" + id + "'";
 
     conexao.query(m_sql, callback)
     console.log('Retornando { M O D E L} Editoras Ativados/Inativado Registro ' + id + " - Status: " + ativo)
