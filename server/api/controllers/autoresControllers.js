@@ -43,10 +43,10 @@ function autoresAtivoInativo(req, res){
     res.json('Ativar/Inativar Autores { M O D E L }')
     console.log('Ativar/Inativar Autores { M O D E L }')
     console.log('Parametro Esperado: ' + id)
-    
+
     models.getByIdAutores(id, function(err, resposta){
-            console.log('Retorno de Autores {M O D E L} ', resposta) 
-            console.log('A/I: ' + p_ativo)
+            console.log('retorno de Autores ID MODEL ', resposta)
+            let p_ativo = resposta[0].aut_ativoinativo
                 if(err){
                     throw err
                 }else{
@@ -62,7 +62,7 @@ function autoresAtivoInativo(req, res){
                         throw err
                     }
                     console.log("Registro Atualizado")
-                   // res.redirect('/autores/consultar' + id)
+                    //res.redirect('/autores/consultar' + id)
                 })
 
             })

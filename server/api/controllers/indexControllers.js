@@ -2,7 +2,7 @@ const modelsIndex = require('../models/indexModels.js')
 
 module.exports = {
     indexControllers, 
-    notFoundControllers
+   // notFoundControllers
 
 }
 
@@ -11,7 +11,10 @@ function indexControllers(req, res){
     console.log('rota raiz encontrada')
 }
 
+/*
 function notFoundControllers(req, res){
     res.json('Rota inexistente 404 ')
     console.log('Rota inexistente')
 }
+
+*/

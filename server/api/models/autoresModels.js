@@ -19,7 +19,8 @@ function ativarInativar(id, ativo, callback){
 
     const m_sql = "update autores set aut_ativoinativo = '" + ativo + "' where aut_codigo'" + id + "'";
 
-    conexao.query(m_sql, callback)
+    conexao.query( m_sql, callback)
+
     console.log('Retornando { M O D E L} Autores Ativados/Inativado Registro ' + id + " - Status: " + ativo)
 
     

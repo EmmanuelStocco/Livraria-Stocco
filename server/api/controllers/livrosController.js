@@ -1,7 +1,7 @@
-const models = require('../models/livrosModels.js')
+const models = require('../models/livrosModels')
 
 module.exports = {
-    livrosMenu, 
+    livrosMenu,  
     livrosGetAll,
     livrosGetById,
     livrosAtivoInativo
@@ -11,9 +11,9 @@ function livrosMenu(req, res){
     res.json('Rota livros encontrada ')
     console.log('rota livros encontrada')
 }
-
+ 
 function livrosGetAll(req, res){
-    console.log('listar libros {M O  D E L}')
+    console.log('listar livros {M O  D E L}')
     models.getAllLivros(function(err, resposta){
         console.log('Retorno de Autores {M O D E L} ', resposta)
         if(err){
@@ -23,6 +23,7 @@ function livrosGetAll(req, res){
         }
     })
 }
+
 
 function livrosGetById(req, res){
    const id = req.params.codigo
@@ -37,7 +38,7 @@ function livrosGetById(req, res){
         })
     }
 
-    function livrosAtivoInativo(req, res){
+function livrosAtivoInativo(req, res){
         const id = req.params.codigo
         res.json('Ativar/Inativar Livros { M O D E L }')
         console.log('Ativar/Inativar Livros { M O D E L }')
@@ -66,5 +67,4 @@ function livrosGetById(req, res){
     
                 })
         
-        }
-    
+        } 
