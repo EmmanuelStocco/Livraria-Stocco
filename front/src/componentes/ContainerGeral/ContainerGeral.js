@@ -1,10 +1,14 @@
-import React from 'React'
-import './ContainerSuperior.css';
+import React from 'react';
+import ContainerSuperior from '../ContainerSuperior/ContainerSuperior';
+import MenuBotoes from '../MenuBotoes/MenuBotoes';
 
-export default function ContainerGeral() {
-  return (
-    <div className="superior">
-      <h1> ContainerGeral </h1>
+import './ContainerGeral.css';
+
+function ContainerGeral() {
+  return ( 
+    <div className = "geral">
+     <ContainerSuperior />
+     <MenuBotoes />
     </div>
   );
 }

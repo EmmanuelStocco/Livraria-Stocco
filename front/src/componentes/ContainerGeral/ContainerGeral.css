@@ -1,6 +1,7 @@
-.superior {
-    height: 17.5vh;
-    border: 1px solid black;
-    margin: 0.2%;
-    background-color: lime;
+.geral {
+    height: 98vh;
+    border: 1px solid blue;
+    margin: 0,2%;
+    background-color: red;
+    text-align: center;
 }

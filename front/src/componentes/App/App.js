@@ -1,10 +1,14 @@
-import React from 'React'
+import React from 'react';
+import ContainerGeral from '../ContainerGeral/ContainerGeral';
+
+
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <h1> App </h1>
+  return ( 
+    <div>
+     <ContainerGeral />
     </div>
   );
 }

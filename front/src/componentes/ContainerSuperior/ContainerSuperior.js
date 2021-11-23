@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Cabecalho from '../Cabecalho/Cabecalho';
+import MenuHorizontal from '../MenuHorizontal/MenuHorizontal';
 
-import Cabecalho from '../Cabecalho/Cabecalho'
-import
+import './ContainerSuperior.css'
 
-function ContainerSuperior(){
-    return(
-        <div>
-        
-        </div>
-    )
+
+export default function ContainerSuperior() {
+  return ( 
+    <div className = "superior">
+       <Cabecalho />  
+       <MenuHorizontal />
+    </div>
+  );
 }

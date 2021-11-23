@@ -1,9 +1,11 @@
-import './Cabecalho.css';
+import './Cabecalho.css'
 
 export default function Cabecalho() {
-    return(
-        <div className = "cabecalho">
-            <h1> C</h1>
-        </div>
-    )
+  return ( 
+    <div className = "cabecalho">
+
+      <h1> Cabecalho </h1>
+
+    </div>
+  );
 }
