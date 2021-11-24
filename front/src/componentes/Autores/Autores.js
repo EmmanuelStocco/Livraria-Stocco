@@ -38,7 +38,7 @@ function Autores() {
                 <th scope="row" style={{textAlign: 'center'}}> {item.aut_codigo} </th>
                 <td> {item.aut_nome}</td> 
                 <td> {item.aut_apelido}</td> 
-                <td> {item.aut_ativoInativo}</td> 
+                <td> {item.aut_ativoinativo}</td> 
                 <td> {item.aut_sexo}</td> 
                 <td> {item.aut_telefone}</td> 
                 <td> {item.aut_email}</td>  
