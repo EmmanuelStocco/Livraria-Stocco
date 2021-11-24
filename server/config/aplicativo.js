@@ -1,6 +1,9 @@
 const express = require('express')
 const consign = require('consign')
+const cors = require('cors')
+
 server = express();
+server.use(cors());
 
 //definição da porta 
 server.set('porta', 3011)

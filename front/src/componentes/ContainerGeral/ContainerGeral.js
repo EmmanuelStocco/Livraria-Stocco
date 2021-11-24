@@ -1,14 +1,23 @@
 import React from 'react';
 import ContainerSuperior from '../ContainerSuperior/ContainerSuperior';
 import MenuBotoes from '../MenuBotoes/MenuBotoes';
-
 import './ContainerGeral.css';
+import AreaDados from '../AreaDados/AreaDados'
+import Rodape from '../Rodape/Rodape'
+
+import { BrowserRouter } from 'react-router-dom';
 
 function ContainerGeral() {
   return ( 
     <div className = "geral">
-     <ContainerSuperior />
-     <MenuBotoes />
+      <BrowserRouter>
+        <ContainerSuperior />
+        <MenuBotoes />
+        
+        <AreaDados />
+
+        <Rodape />
+      </BrowserRouter>
     </div>
   );
 }

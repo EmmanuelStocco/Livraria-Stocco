@@ -5,3 +5,11 @@
     background-color: darkgray;
     
    }
+
+   #btnAutores, #btnEditoras, #btnLivros, #btnUsuarios, #btnConfig {
+    margin: 0.5%;
+    width: 150px;
+    min-width: 15vw;
+    max-width: 15vw;
+    padding-left: 2vw;
+   }
